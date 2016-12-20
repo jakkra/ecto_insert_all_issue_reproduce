@@ -9,7 +9,17 @@ To start your Phoenix app:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+It works well in dev/prod but when you make a release by setting MIX_ENV=prod and PORT=80 and running 
+
+ * `mix compile`
+ * `mix phoenix.digest`
+ * `mix release`
+ * `cd rel/ecto_problem/bin`
+ * `ecto_problem console`
+ * `visit localhost:80`
+ 
+ Now you can see that it very slow.
+
 
 ## Learn more
 
